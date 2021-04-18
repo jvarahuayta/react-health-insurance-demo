@@ -1,0 +1,22 @@
+.text-field {
+	display: inline-flex;
+	flex-direction: column;
+	&__control {
+		border: 1px solid #caccd2;
+		border-radius: 5px;
+		display: inline-block;
+		input {
+			padding: 8px;
+			outline: none;
+			border: none;
+		}
+	}
+	&--error {
+		.text-field__control {
+			border-color: #d1444a;
+		}
+		.text-field__error {
+			color: #d1444a;
+		}
+	}
+}
